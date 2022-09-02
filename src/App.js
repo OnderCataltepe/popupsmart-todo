@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.scss";
+import { Routes, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
+import Navbar from "./Components/Navbar/Navbar";
+import UserForm from "./Components/UserForm/UserForm";
+import TodoApp from "./Components/TodoApp/TodoApp";
 function App() {
+  const isDark = useSelector((state) => state.theme.isDark);
+  const username = useSelector((state) => state.todos.username);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={isDark ? "darkAppContainer" : "lightAppContainer"}>
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route index element={username ? <TodoApp /> : <UserForm />} />
+          <Route path="*" element={username ? <TodoApp /> : <UserForm />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

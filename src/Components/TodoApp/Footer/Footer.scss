@@ -1,0 +1,56 @@
+.footerContainer {
+  width: 50rem;
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+  display: flex;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  box-shadow: rgba(106, 89, 180, 0.3) 0 0.2rem 0.4rem 0.3rem;
+
+  p {
+    font-size: 1.6rem;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    opacity: 0.8;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    background-color: #fd1d15;
+    color: white;
+  }
+  button:hover {
+    opacity: 1;
+  }
+}
+
+.radioDiv {
+  text-align: start;
+  font-size: 1.4rem;
+  display: flex;
+  font-weight: bold;
+  div {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 1rem;
+  }
+
+  input {
+    margin-right: 0.5rem;
+    accent-color: #27272c;
+  }
+}
+
+.footerContainer.dark {
+  p {
+    color: #3b3b3b;
+  }
+  .radioDiv {
+    color: #3b3b3b;
+  }
+}

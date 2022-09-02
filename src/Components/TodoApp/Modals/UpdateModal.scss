@@ -1,0 +1,70 @@
+.upBgContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+}
+
+.upCardContainer {
+  position: absolute;
+  width: 55rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(248, 245, 245);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0rem 0rem 1rem 0rem black;
+}
+
+.upCardContainer.dark {
+  background-color: #948d8d;
+}
+.upCardContainer form {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upCardContainer form input {
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  outline: none;
+  border: none;
+  box-shadow: 0rem 0rem 0.2rem 0rem black;
+  width: 60%;
+}
+
+.upButtonDiv button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 1rem;
+  opacity: 0.8;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.upButtonDiv button:hover {
+  opacity: 1;
+}
+
+.upButtonDiv button:nth-child(1) {
+  background-color: rgb(212, 211, 211);
+}
+.upButtonDiv button:nth-child(2) {
+  background-color: rgb(40, 207, 40);
+}
+
+.upCardContainer p {
+  margin-top: 1rem;
+  color: red;
+  text-align: start;
+  font-size: 1.4rem;
+  padding-left: 1rem;
+}

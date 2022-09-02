@@ -1,0 +1,117 @@
+.todoContainer {
+  width: 50rem;
+  height: 25rem;
+  overflow-y: scroll;
+  margin: 2rem auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -1rem 2rem -2rem inset;
+  > p {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+}
+.todoContainer::-webkit-scrollbar-track {
+  border-radius: 2rem;
+  background-color: transparent;
+}
+
+.todoContainer::-webkit-scrollbar {
+  width: 0.8rem;
+  background-color: transparent;
+}
+.todoContainer::-webkit-scrollbar-track-piece:end {
+  background-color: transparent;
+  margin-bottom: 1rem;
+}
+.todoContainer::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #8e8789;
+}
+
+/* List Element*/
+.list {
+  display: flex;
+  width: 95%;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  border-radius: 3rem 0rem 0rem 3em;
+  justify-content: space-between;
+  margin: 0rem auto 1rem auto;
+  p {
+    display: block;
+    font-size: 2rem;
+    word-wrap: break-word;
+    font-weight: bold;
+    width: 30rem;
+    text-align: start;
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+  }
+}
+.lightElement {
+  @extend .list;
+  border: 0.1rem solid rgb(202, 202, 202);
+  box-shadow: rgba(106, 89, 180, 0.3) 0 0.3rem 0.3rem;
+
+  .checkDiv {
+    border: 0.1rem solid #c9c8c8;
+  }
+  p.completedParag {
+    text-decoration: line-through;
+    color: #838282;
+  }
+  .checkIcon {
+    color: #838282;
+  }
+}
+.darkElement {
+  @extend .list;
+
+  border: 0.1rem solid #848592;
+  box-shadow: rgba(79, 80, 189, 0.3) 0 0.3rem 0.3rem;
+  p {
+    color: #f8f4f4;
+  }
+  .checkDiv {
+    border: 0.1rem solid #848592;
+  }
+  p.completedParag {
+    text-decoration: line-through;
+    color: #4e4e4e;
+  }
+  .checkIcon {
+    color: #4e4e4e;
+  }
+}
+
+.checkDiv {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.editIcon {
+  font-size: 2rem;
+  color: green;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.closeIcon {
+  font-size: 2rem;
+  color: red;
+  opacity: 0.8;
+}
+
+.editIcon:hover,
+.closeIcon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
