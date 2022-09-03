@@ -48,3 +48,21 @@
     margin-top: 0.5rem;
   }
 }
+
+.darkAppContainer {
+  #userform827x {
+    form {
+      label {
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #userform827x {
+    input {
+      width: 20rem;
+    }
+  }
+}

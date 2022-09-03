@@ -12,30 +12,34 @@
   margin: 2rem auto;
   border-radius: 16px;
 }
+@media screen and (max-width: 600px) {
+  .App {
+    width: 50rem;
+    padding: 0;
+  }
+}
 .darkAppContainer {
   @extend .container;
 
-  background: url("./assets/PopupsmartDark.jpg");
+  background: url("./assets/dark.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   .App {
-    @extend .App;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
 }
 
 .lightAppContainer {
   @extend .container;
-  background: url("./assets/PopupsmartLight.jpg");
+  background: url("./assets/light.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   .App {
-    @extend .App;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);

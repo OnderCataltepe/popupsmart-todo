@@ -48,9 +48,18 @@
 
 .footerContainer.dark {
   p {
-    color: #3b3b3b;
+    color: #d8d5d5;
   }
   .radioDiv {
-    color: #3b3b3b;
+    color: #d8d5d5;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footerContainer {
+    width: 45rem;
+    p {
+      font-size: 1.2rem;
+    }
   }
 }

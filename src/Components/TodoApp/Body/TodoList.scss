@@ -9,6 +9,13 @@
     margin-top: 2rem;
   }
 }
+.darkAppContainer {
+  .todoContainer {
+    > p {
+      color: wheat;
+    }
+  }
+}
 .todoContainer::-webkit-scrollbar-track {
   border-radius: 2rem;
   background-color: transparent;
@@ -79,10 +86,10 @@
   }
   p.completedParag {
     text-decoration: line-through;
-    color: #4e4e4e;
+    color: #817e7e;
   }
   .checkIcon {
-    color: #4e4e4e;
+    color: #817e7e;
   }
 }
 
@@ -114,4 +121,11 @@
 .closeIcon:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .todoContainer {
+    width: 45rem;
+    padding: 0;
+  }
 }
