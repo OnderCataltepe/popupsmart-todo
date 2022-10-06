@@ -1,4 +1,4 @@
-# Tooo App
+# Todo App
 
 Built with React.js and redux/toolkit.
 [Click](https://popupsmart-cataltepe.surge.sh) for the app.
